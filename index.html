@@ -18,7 +18,22 @@
       href="stylesheets/css-pages-style.css"
     />
     <style>
+      header {
+        background-color: lightgrey;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        margin: 4px;
+        font-size: 24px;
+      }
       .nav-link {
+        margin: 4px;
+        color: black;
+      }
+      .nav-link li {
+        display: inline-block;
       }
     </style>
   </head>
@@ -27,9 +42,11 @@
       <h1>Plants vs. Zombies Wiki</h1>
       <nav>
         <ul>
-          <a href="index.html"><li>Home</li></a>
-          <a href="index.html"><li></li></a>
-          <a href="index.html"><li>Home</li></a>
+          <a class="nav-link" href="index.html"><li>Home</li></a>
+          <a class="nav-link" href="index.html"><li>Plants</li></a>
+          <a class="nav-link" href="index.html"><li>Zombies</li></a>
+          <a class="nav-link" href="index.html"><li>Lawns</li></a>
+          <a class="nav-link" href="index.html"><li>Tips</li></a>
         </ul>
       </nav>
     </header>
