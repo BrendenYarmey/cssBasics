@@ -19,42 +19,64 @@
     />
     <style>
       header {
-        background-color: lightgrey;
+        background-color: rgb(225, 225, 225);
         position: sticky;
+        padding: 5px;
       }
       h1 {
         text-decoration: underline;
       }
       ul {
-        padding: 0;
+        padding: 0px;
         list-style: none;
       }
       li {
+        font-style: bold;
         font-size: 24px;
       }
       .nav-link {
-        margin: 20px;
+        margin: 6px;
+        padding: 8px;
         color: black;
         border: 1px transparent;
       }
       .nav-link:hover {
-        background-color: gray;
+        background-color: rgb(200, 200, 200);
       }
       .nav-link li {
         display: inline-block;
+      }
+      .green-word {
+        color: rgb(37, 165, 37);
+      }
+      .grey-word {
+        color: rgb(75, 75, 75);
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Plants vs. Zombies Wiki</h1>
+      <h1>
+        <span class="green-word">Plants</span> vs.
+        <span class="grey-word">Zombies</span> Wiki
+      </h1>
       <nav>
         <ul>
-          <a class="nav-link" href="index.html"><li>Home</li></a>
-          <a class="nav-link" href="index.html"><li>Plants</li></a>
-          <a class="nav-link" href="index.html"><li>Zombies</li></a>
-          <a class="nav-link" href="index.html"><li>Lawns</li></a>
-          <a class="nav-link" href="index.html"><li>Tips</li></a>
+          <a class="nav-link" href="index.html"
+            ><li><span class="grey-word">Home</span></li></a
+          >
+          <a class="nav-link" href="index.html"
+            ><li><span class="green-word">Plants</span></li></a
+          >
+          <a class="nav-link" href="index.html"
+            ><li><span class="grey-word">Zombies</span></li></a
+          >
+          <a class="nav-link" href="index.html"
+            ><li><span class="green-word">Lawns</span></li></a
+          >
+          <a class="nav-link" href="index.html"
+            ><li><span class="grey-word">Tips</span></li></a
+          >
         </ul>
       </nav>
     </header>
