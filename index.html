@@ -54,6 +54,12 @@
       .grey-word {
         color: rgb(75, 75, 75);
       }
+      #flip-img {
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        float: none;
+      }
     </style>
   </head>
   <body>
@@ -88,6 +94,31 @@
         <span class="green-word">Plants</span> vs.
         <span class="grey-word">Zombies.</span>
       </p>
+      <br />
+      <img
+        src="images/peashooter.png"
+        alt="An image of a green cartoon pea plant"
+        width="300"
+        height="300"
+      />
+      <img
+        style="
+          background-color: rgb(225, 225, 225);
+          padding: 10px;
+          margin: 30px;
+        "
+        src="images/pvz-menu.jfif"
+        alt="An image featuring a variety of cartoon plants and zombies with the words plants vs. zombies centered"
+        width="500"
+        height="300"
+      />
+      <img
+        id="flip-img"
+        src="images/peashooter.png"
+        alt="An image of a green cartoon pea plant"
+        width="300"
+        height="300"
+      />
     </main>
     <footer></footer>
   </body>
