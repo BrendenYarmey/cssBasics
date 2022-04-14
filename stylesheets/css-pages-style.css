@@ -5,6 +5,7 @@ body {
   color: black;
   text-align: center;
 }
+/*Sets font size and margin around element*/
 h1 {
   font-size: 36px;
   margin: 0px;
@@ -16,6 +17,7 @@ p {
   font-size: 30px;
   text-decoration: underline;
 }
+/*Underlines and italizes the title text*/
 #title-style {
   text-decoration: underline;
   font-style: italic;

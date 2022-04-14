@@ -19,29 +19,37 @@
     />
     <style>
       header {
+        /*Sets a background color for the header*/
         background-color: rgb(225, 225, 225);
+        /*Sticks header it to the top
+       of the screen which stays as you scroll*/
         position: sticky;
         top: 0px;
         padding: 5px;
+        /*Puts header on a layer above all other elements*/
         z-index: 1;
       }
       footer {
         background-color: rgb(225, 225, 225);
         padding: 5px;
       }
+      /*The blocked paragraph class will create a block of grey around an element*/
       .blocked-paragraph {
         background-color: rgb(225, 225, 225);
         display: inline-block;
+        /*Puts additional space surrounding the text inside an element*/
         padding: 10px;
       }
       ul {
         padding: 0px;
+        /*Removes list dots*/
         list-style: none;
       }
       .nav-link {
         margin: 6px;
         padding: 8px;
         color: black;
+        /*Makes power 1 pixel think and transparent*/
         border: 1px transparent;
       }
       .nav-link:hover {
@@ -70,6 +78,8 @@
       .grey-word {
         color: rgb(75, 75, 75);
       }
+      /*Reverses image horizontally. Code taken from "The new code" 
+      http://thenewcode.com/483/Flipping-Images-With-CSS-Transforms*/
       #flip-img {
         transform: scaleX(-1);
         filter: FlipH;
@@ -84,6 +94,7 @@
         <span class="green-word">Plants</span> vs.
         <span class="grey-word">Zombies</span> Wiki
       </h1>
+      <!--Contains site links in an unordered list. Links currently lead nowhere.-->
       <nav>
         <ul>
           <a class="nav-link" href="index.html"
@@ -114,6 +125,7 @@
         <span class="grey-word">Zombies.</span>
       </p>
       <br />
+      <!--Section for three different images-->
       <section>
         <img
           src="images/peashooter.png"
@@ -151,6 +163,8 @@
         selection of <span class="green-word">plants</span> with unique ofensive
         and defensive capabilities.
       </p>
+      <!--Section contains a youtube video iframe of the orignal plants vs. zombies
+       trailer with a paragraph caption underneath-->
       <section>
         <iframe
           style="background-color: rgb(225, 225, 225); padding: 10px"
