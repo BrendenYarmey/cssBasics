@@ -12,6 +12,10 @@ h1 {
 p {
   font-size: 24px;
 }
+#info-head-style {
+  font-size: 30px;
+  text-decoration: underline;
+}
 #title-style {
   text-decoration: underline;
   font-style: italic;
