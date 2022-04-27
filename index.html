@@ -18,66 +18,6 @@
       href="stylesheets/css-pages-style.css"
     />
     <style>
-      header {
-        /*Sets a background color for the header*/
-        background-color: rgb(225, 225, 225);
-        /*Sticks header it to the top
-       of the screen which stays as you scroll*/
-        position: sticky;
-        top: 0px;
-        padding: 5px;
-        /*Puts header on a layer above all other elements*/
-        z-index: 1;
-      }
-      footer {
-        background-color: rgb(225, 225, 225);
-        padding: 5px;
-      }
-      /*The blocked paragraph class will create a block of grey around an element*/
-      .blocked-paragraph {
-        background-color: rgb(225, 225, 225);
-        display: inline-block;
-        /*Puts additional space surrounding the text inside an element*/
-        padding: 10px;
-      }
-      ul {
-        padding: 0px;
-        /*Removes list dots*/
-        list-style: none;
-      }
-      .nav-link {
-        margin: 6px;
-        padding: 8px;
-        color: black;
-        /*Makes border 1 pixel thick and transparent*/
-        border: 1px transparent;
-      }
-      .nav-link:hover {
-        background-color: rgb(200, 200, 200);
-      }
-      .foot-link {
-        margin: 6px;
-        padding: 8px;
-        color: black;
-        border: 1px transparent;
-      }
-      .foot-link:hover {
-        background-color: rgb(200, 200, 200);
-      }
-      .foot-link li {
-        font-size: 18px;
-        display: inline-block;
-      }
-      .nav-link li {
-        font-size: 24px;
-        display: inline-block;
-      }
-      .green-word {
-        color: rgb(37, 165, 37);
-      }
-      .grey-word {
-        color: rgb(75, 75, 75);
-      }
       /*Reverses image horizontally. Code taken from "The new code" 
       http://thenewcode.com/483/Flipping-Images-With-CSS-Transforms*/
       #flip-img {
@@ -85,6 +25,10 @@
         filter: FlipH;
         -ms-filter: "FlipH";
         float: none;
+      }
+      p {
+        margin: 0px;
+        padding: 0px;
       }
     </style>
   </head>
@@ -128,6 +72,7 @@
       <!--Section for three different images-->
       <section>
         <img
+          style="margin: 10px"
           src="images/peashooter.png"
           alt="An image of a green cartoon pea plant"
           width="300"
@@ -137,7 +82,7 @@
           style="
             background-color: rgb(225, 225, 225);
             padding: 10px;
-            margin: 30px;
+            margin: 0px;
           "
           src="images/pvz-menu.jfif"
           alt="An image featuring a variety of cartoon plants and zombies with the words plants vs. zombies centered"
@@ -145,6 +90,7 @@
           height="300"
         />
         <img
+          style="margin: 10px"
           id="flip-img"
           src="images/peashooter.png"
           alt="An image of a green cartoon pea plant"
@@ -152,17 +98,19 @@
           height="300"
         />
       </section>
-      <p class="blocked-paragraph">
-        <span id="info-head-style"> Game Summary </span><br />
-        <span class="green-word">Plants</span> vs.
-        <span class="grey-word">Zombies</span>
-        is a tower style game where you aim to defend<br />
-        your house from hordes of hungry
-        <span class="grey-word">zombies</span>
-        using a vast<br />
-        selection of <span class="green-word">plants</span> with unique ofensive
-        and defensive capabilities.
-      </p>
+      <div class="blocked-paragraph">
+        <h2><span id="info-head-style"> Game Summary </span></h2>
+        <p>
+          <span class="green-word">Plants</span> vs.
+          <span class="grey-word">Zombies</span>
+          is a tower style game where you aim to defend<br />
+          your house from hordes of hungry
+          <span class="grey-word">zombies</span>
+          using a vast<br />
+          selection of <span class="green-word">plants</span> with unique
+          ofensive and defensive capabilities.
+        </p>
+      </div>
       <!--Section contains a youtube video iframe of the orignal plants vs. zombies
        trailer with a paragraph caption underneath-->
       <section>
@@ -177,10 +125,18 @@
           allowfullscreen
         ></iframe>
         <br />
-        <p class="blocked-paragraph">
-          The orignal <span class="green-word">Plants</span> vs.
-          <span class="grey-word">Zombies</span> game trailer from 2009.
-        </p>
+        <div class="blocked-paragraph">
+          <p>
+            The orignal <span class="green-word">Plants</span> vs.
+            <span class="grey-word">Zombies</span> game trailer from 2009.
+            <br />
+          </p>
+          <a
+            class="youtube-link"
+            href="https://www.youtube.com/embed/CHAbHz8iYHc"
+            >Watch the video on Youtube</a
+          >
+        </div>
       </section>
     </main>
     <footer>
@@ -188,8 +144,12 @@
         <a class="foot-link" href="index.html"><li>Contact Us</li></a>
       </ul>
       <div style="text-decoration: underline">
-        <p style="font-size: 12px">Site designed by Brenden Yarmey</p>
-        <p style="font-size: 12px">Last Updated on April 18th 2022</p>
+        <p style="font-size: 12px; margin: 5px">
+          Site designed by Brenden Yarmey
+        </p>
+        <p style="font-size: 12px; margin: 5px">
+          Last Updated on April 18th 2022
+        </p>
       </div>
     </footer>
   </body>
