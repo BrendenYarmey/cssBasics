@@ -49,6 +49,11 @@ and the sub-header is in the middle, adding
 }
 */
 
+/*
+Adds the base text styles applied to the file's bodies including
+background color, text color, fonts, the documents postitioning, 
+and breathing room between words, letters, and rows.
+*/
 body {
   margin: 0;
   background-color: #ccffcc;
@@ -59,10 +64,17 @@ body {
   word-spacing: 2px;
   letter-spacing: 0.5px;
 }
+/*
+Changes the font size for primary header and removes the 
+margin surrounding it.
+*/
 h1 {
   font-size: 48px;
   margin: 0px;
 }
+/*
+Removes the padding inside an element along with the outer margin
+*/
 h2 {
   padding: 0px;
   margin: 0px;
@@ -70,6 +82,11 @@ h2 {
 p {
   font-size: 24px;
 }
+/*
+Creates a custom text style ID for a mini header which
+underlines text, changes the font's weight (boldness) back to normal
+and alters text size.
+*/
 #info-head-style {
   font-size: 36px;
   text-decoration: underline;
@@ -85,12 +102,18 @@ p {
   margin: 6px;
   padding: 8px;
   color: #141414;
-  /*Makes border 1 pixel thick and transparent*/
-  border: 1px transparent;
 }
+/*
+Creates an underline effect when hovering over a link
+*/
 .nav-link:hover li {
   text-decoration: underline;
 }
+/*
+Creates a custom link style to a youtube video
+utilizing italics and other properties mentioned
+previously.
+*/
 .youtube-link {
   margin: 6px;
   padding: 8px;
@@ -102,11 +125,13 @@ p {
 .youtube-link:hover {
   text-decoration: underline;
 }
+/*
+Defines a custom footer link
+*/
 .foot-link {
   margin: 6px;
   padding: 8px;
   color: #141414;
-  border: 1px transparent;
 }
 .foot-link:hover li {
   text-decoration: underline;
@@ -119,6 +144,10 @@ p {
   font-size: 24px;
   display: inline-block;
 }
+/*
+Green and Grey word are used in spans to add a specific color
+to highlight the words plant (green) and zombie (grey) respectively
+*/
 .green-word {
   color: #3a5a3a;
 }

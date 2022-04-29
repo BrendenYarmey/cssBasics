@@ -17,6 +17,13 @@
       type="text/css"
       href="stylesheets/css-pages-style.css"
     />
+    <style>
+      /*Puts 0 default margin around a paragraph and no padding inside one*/
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -24,7 +31,8 @@
         <span class="green-word">Plants</span> vs.
         <span class="grey-word">Zombies</span> Wiki
       </h1>
-      <!--Contains site links in an unordered list. Links currently lead nowhere.-->
+      <!--Contains site links in an unordered list. Links currently lead nowhere.
+      With the tips page as an exception-->
       <nav>
         <ul>
           <a class="nav-link" href="index.html"
@@ -39,6 +47,7 @@
           <a class="nav-link" href="index.html"
             ><li><span class="green-word">Lawns</span></li></a
           >
+          <!--The tips link now leads to the tips page-->
           <a class="nav-link" href="tips.html"
             ><li><span class="grey-word">Tips</span></li></a
           >
@@ -49,7 +58,60 @@
       </nav>
     </header>
     <main>
-      <p class="blocked-paragraph"></p>
+      <p class="blocked-paragraph">
+        Learn all sorts of Tips and Tricks for <br />
+        Defending your Lawn against the
+        <span class="grey-word">Zombies.</span>
+      </p>
+      <section>
+        <img
+          style="background-color: #f5f5f5; padding: 10px; margin: 0px"
+          src="images/pvz-lawn-1.jfif"
+          alt="An image featuring a variety of cartoon plants and zombies on a large green lawn"
+          width="500"
+          height="300"
+        />
+        &nbsp; &nbsp; &nbsp;
+        <img
+          style="background-color: #f5f5f5; padding: 10px; margin: 0px"
+          src="images/pvz-lawn-3.jfif"
+          alt="An image featuring a variety of cartoon plants and zombies on a reddish tile roof"
+          width="500"
+          height="300"
+        />
+      </section>
+      <div class="blocked-paragraph">
+        <h2><span id="info-head-style"> Basic Strategies </span></h2>
+        <p>
+          In <span class="green-word">Plants</span> vs.
+          <span class="grey-word">Zombies</span>, you get so many great options
+          of <span class="green-word">plants</span> to <br />
+          defend your home, so how do you decide which
+          <span class="green-word">plants</span> to take into a level? <br />
+          Well, there are a few important rules to remember. <br />
+          <br />
+          <span style="font-weight: bold"
+            >1. Keep Balance in your
+            <span class="green-word">Plant</span> Selections!</span
+          >
+          <br />
+          Make sure to keep balance in your
+          <span class="green-word">plant</span> types and sun cost. Always bring
+          a sun producing <span class="green-word">plant</span> <br />
+          <span style="font-weight: bold">2. Synergy is Important!</span> <br />
+          Bring <span class="green-word">plants</span> that work well together,
+          like an ice pea with normal peas or chomper with a walnut. <br />
+          <span style="font-weight: bold"
+            >3. Bring the Right <span class="green-word">Plants</span> for the
+            Job!</span
+          >
+          <br />
+          Some <span class="green-word">plants</span> work better on specific
+          levels or lawns. For example, on the day levels, fungi will be <br />
+          sleeping so you should either not bring them in your selection or opt
+          to take a coffee bean.
+        </p>
+      </div>
     </main>
     <footer>
       <ul>
