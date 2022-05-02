@@ -1,58 +1,60 @@
 /*
-Color/Additional Design Choices:
--I used a form of analogous colors for my theme with different greens 
+  -I decided to write down all my thoughts about my websites design here.
 
--Primary Color: Dark Green (#3a5a3a)
--Secondary Colors: Soft Green (#ccffcc)
--Neutral Colors: Off-black (#141414),light grey (#f5f5f5), dark grey (#505050)
+  Color/Additional Design Choices:
+  -I used a form of analogous colors for my theme with different greens 
 
--I chose a green color scheme with different greys mainly
-because of how it fits with the focus of the site. Green can
-represents nature, and greenspace which works perfectly
-with plants vs. zombies. The game is full of greens and
-greys as the two most important colors and I found they worked 
-beautifully in my site as well. Greys are always representing the 
-zombies, greens the plants. Green is still utilized more
-in the games so I dsigned my site the same.
+  -Primary Color: Dark Green (#3a5a3a)
+  -Secondary Colors: Soft Green (#ccffcc)
+  -Neutral Colors: Off-black (#141414),light grey (#f5f5f5), dark grey (#505050)
 
--All colors fit into the 7:1 color ratio
--I knew I would use a light color theme as my site 
-has lots of text and many bright elements.
--I chose to go with a list of sans-serif fonts to 
-get a more modern and fresh look with my site
--line-height word spacing and letter spacing all 
-selected to improve text breathing room
+  -I chose a green color scheme with different greys mainly
+  because of how it fits with the focus of the site. Green can
+  represents nature, and greenspace which works perfectly
+  with plants vs. zombies. The game is full of greens and
+  greys as the two most important colors and I found they worked 
+  beautifully in my site as well. Greys are always representing the 
+  zombies, greens the plants. Green is still utilized more
+  in the games so I dsigned my site the same.
 
--I used a text hierarchy of 12-24-36-48 to Show 
-different heading sizes. This works as the 
-head is double the size of the paragraph text
-and the sub-header is in the middle, adding
-12px everytime.
+  -All colors fit into the 7:1 color ratio
+  -I knew I would use a light color theme as my site 
+  has lots of text and many bright elements.
+  -I chose to go with a list of sans-serif fonts to 
+  get a more modern and fresh look with my site
+  -line-height word spacing and letter spacing all 
+  selected to improve text breathing room
+
+  -I used a text hierarchy of 12-24-36-48 to Show 
+  different heading sizes. This works as the 
+  head is double the size of the paragraph text
+  and the sub-header is in the middle, adding
+  12px everytime.
 */
 
 /*
--Mr. Coppens showed me this code.
--I'm not using it but I'd love to preserve it!
--May also save for later use in this project.
+  -Mr. Coppens showed me this code.
+  -I'm not using it but I'd love to preserve it!
+  -May also save for later use in this project.
 
-.green-drop {
-  width: auto;
-  background-color: #3a5a3a;
-  color: #f5f5f5;
-  padding: 30px;
-}
-.white-drop {
-  width: auto;
-  background-color: #f5f5f5;
-  color: #3a5a3a;
-  padding: 30px;
-}
+  .green-drop {
+    width: auto;
+    background-color: #3a5a3a;
+    color: #f5f5f5;
+    padding: 30px;
+  }
+  .white-drop {
+    width: auto;
+    background-color: #f5f5f5;
+    color: #3a5a3a;
+    padding: 30px;
+  }
 */
 
 /*
-Adds the base text styles applied to the file's bodies including
-background color, text color, fonts, the documents postitioning, 
-and breathing room between words, letters, and rows.
+  Adds the base text styles applied to the file's bodies including
+  background color, text color, fonts, the documents postitioning, 
+  and breathing room between words, letters, and rows.
 */
 body {
   margin: 0;
@@ -65,15 +67,15 @@ body {
   letter-spacing: 0.5px;
 }
 /*
-Changes the font size for primary header and removes the 
-margin surrounding it.
+  Changes the font size for primary header and removes the 
+  margin surrounding it.
 */
 h1 {
   font-size: 48px;
   margin: 0px;
 }
 /*
-Removes the padding inside an element along with the outer margin
+  Removes the padding inside an element along with the outer margin
 */
 h2 {
   padding: 0px;
@@ -83,16 +85,18 @@ p {
   font-size: 24px;
 }
 /*
-Creates a custom text style ID for a mini header which
-underlines text, changes the font's weight (boldness) back to normal
-and alters text size.
+  Creates a custom text style ID for a mini header which
+  underlines text, changes the font's weight (boldness) back to normal
+  and alters text size.
 */
 #info-head-style {
   font-size: 36px;
   text-decoration: underline;
   font-weight: normal;
 }
-/*Underlines and italizes the title text*/
+/*
+  Underlines and italizes the title text
+*/
 #title-style {
   margin: 10px;
   text-decoration: underline;
@@ -104,15 +108,15 @@ and alters text size.
   color: #141414;
 }
 /*
-Creates an underline effect when hovering over a link
+  Creates an underline effect when hovering over a link
 */
 .nav-link:hover li {
   text-decoration: underline;
 }
 /*
-Creates a custom link style to a youtube video
-utilizing italics and other properties mentioned
-previously.
+  Creates a custom link style to a youtube video
+  utilizing italics and other properties mentioned
+  previously.
 */
 .youtube-link {
   margin: 6px;
@@ -126,7 +130,7 @@ previously.
   text-decoration: underline;
 }
 /*
-Defines a custom footer link
+  Defines a custom footer link
 */
 .foot-link {
   margin: 6px;
@@ -145,8 +149,8 @@ Defines a custom footer link
   display: inline-block;
 }
 /*
-Green and Grey word are used in spans to add a specific color
-to highlight the words plant (green) and zombie (grey) respectively
+  Green and Grey word are used in spans to add a specific color
+  to highlight the words plant (green) and zombie (grey) respectively
 */
 .green-word {
   color: #3a5a3a;
@@ -155,30 +159,41 @@ to highlight the words plant (green) and zombie (grey) respectively
   color: #505050;
 }
 header {
-  /*Sets a background color for the header*/
+  /*
+    Sets a background color for the header
+  */
   background-color: #f5f5f5;
-  /*Sticks header it to the top
-        of the screen which stays as you scroll*/
+  /*
+    Sticks header it to the top of the screen which stays as you scroll
+  */
   position: sticky;
   top: 0px;
   padding: 5px;
-  /*Puts header on a layer above all other elements*/
+  /*
+    Puts header on a layer above all other elements
+  */
   z-index: 1;
 }
 footer {
   background-color: #f5f5f5;
   padding: 5px;
 }
-/*The blocked paragraph class will create a block of grey around an element*/
+/*
+  The blocked paragraph class will create a block of grey around an element
+*/
 .blocked-paragraph {
   background-color: #f5f5f5;
   display: inline-block;
-  /*Puts additional space surrounding the text inside an element*/
+  /*
+    Puts additional space surrounding the text inside an element
+  */
   padding: 10px;
   margin: 20px;
 }
 ul {
   padding: 0px;
-  /*Removes list dots*/
+  /*
+    Removes list dots
+  */
   list-style: none;
 }
