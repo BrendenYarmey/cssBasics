@@ -2,9 +2,9 @@
   -I decided to write down all my thoughts about my websites design here.
 
   Color/Additional Design Choices:
-  -I used a form of analogous colors for my theme with different greens 
+  -I used a form of monochromatic colors for my theme with different greens 
 
-  -Primary Color: Dark Green (#3a5a3a), Dark Grey (#505050)
+  -Primary Color: Dark Green (#458d45), Dark Grey (#796969)
   -Secondary Colors: Soft Green (#ccffcc)
   -Neutral Colors: Off-Black (#141414), Light Grey (#f5f5f5)
 
@@ -69,9 +69,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #141414;
   text-align: center;
-  line-height: 200%;
   word-spacing: 2px;
   letter-spacing: 0.5px;
+}
+* {
+  line-height: 140%;
 }
 /*
   Changes the font size for primary header and removes the 
@@ -160,10 +162,10 @@ p {
   to highlight the words plant (green) and zombie (grey) respectively
 */
 .green-word {
-  color: #3a5a3a;
+  color: #458d45;
 }
 .grey-word {
-  color: #505050;
+  color: #796969;
 }
 header {
   /*
