@@ -17,7 +17,56 @@
       type="text/css"
       href="stylesheets/css-pages-style.css"
     />
-    <style></style>
+    <style>
+      .flip-card {
+        padding: 10px;
+        background-color: orange;
+        margin: 0px;
+        transform: translateX(185%) translateY(20%);
+        width: 500px;
+        height: 300px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -54,14 +103,22 @@
         unique attributes throughout <span class="green-word">Plants</span> vs.
         <span class="grey-word">Zombies.</span>
       </p>
-      <br />
-      <img
-        style="background-color: #f5f5f5; padding: 10px; margin: 0px"
-        src="images/pvz-menu.jfif"
-        alt="An image featuring a variety of cartoon plants and zombies with the words plants vs. zombies centered"
-        width="500"
-        height="300"
-      />
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="images/pvz-lawn-2.jfif"
+              alt="Avatar"
+              style="width: 500px; height: 300px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Crewmates</h1>
+            <p>Definitely Not Suspicious</p>
+            <p>These guys can't vent and won't kill eachother</p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <ul>
@@ -72,7 +129,7 @@
           Site designed by Brenden Yarmey
         </p>
         <p style="font-size: 12px; margin: 5px">
-          Last Updated on May 16th 2022
+          Last Updated on May 30th 2022
         </p>
       </div>
     </footer>
