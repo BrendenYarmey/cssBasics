@@ -4,7 +4,7 @@
   Color/Additional Design Choices:
   -I used a form of monochromatic colors for my theme with different greens 
 
-  -Primary Color: Dark Green (#458d45), Dark Grey (#796969)
+  -Primary Color: Dark Green (#458d45), Dark Grey (##6b5d5d)
   -Secondary Colors: Soft Green (#ccffcc)
   -Neutral Colors: Off-Black (#141414), Light Grey (#f5f5f5)
 
@@ -165,7 +165,7 @@ p {
   color: #458d45;
 }
 .grey-word {
-  color: #796969;
+  color: #6b5d5d;
 }
 header {
   /*

@@ -19,13 +19,12 @@
     />
     <style>
       .flip-card {
+        display: inline-block;
         padding: 10px;
-        background-color: orange;
-        margin: 0px;
-        transform: translateX(185%) translateY(20%);
+        background-color: #458d45;
+        margin: 10px;
         width: 500px;
         height: 300px;
-        border: 1px solid #f1f1f1;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
       }
 
@@ -35,7 +34,7 @@
         width: 100%;
         height: 100%;
         text-align: center;
-        transition: transform 0.8s;
+        transition: transform 0.6s;
         transform-style: preserve-3d;
       }
 
@@ -56,14 +55,14 @@
 
       /* Style the front side (fallback if image is missing) */
       .flip-card-front {
-        background-color: #bbb;
-        color: black;
+        background-color: #f5f5f5;
+        color: #141414;
       }
 
       /* Style the back side */
       .flip-card-back {
-        background-color: dodgerblue;
-        color: white;
+        background-color: #f5f5f5;
+        color: #141414;
         transform: rotateY(180deg);
       }
     </style>
@@ -103,19 +102,27 @@
         unique attributes throughout <span class="green-word">Plants</span> vs.
         <span class="grey-word">Zombies.</span>
       </p>
+      <br />
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
-              src="images/pvz-lawn-2.jfif"
-              alt="Avatar"
+              src="images/pvz-lawn-day.jfif"
+              alt="An image of a cartoon lawn during day featuring several different plants and zombies"
               style="width: 500px; height: 300px"
             />
           </div>
           <div class="flip-card-back">
-            <h1>Crewmates</h1>
-            <p>Definitely Not Suspicious</p>
-            <p>These guys can't vent and won't kill eachother</p>
+            <h1>Front Lawn Day</h1>
+            <p>
+              A Day based lawn with five lanes for
+              <span class="green-word">plants</span> and
+              <span class="grey-word">zombies.</span>
+            </p>
+            <p>
+              Sun will fall from the sky and fungal
+              <span class="green-word">plants</span> will be asleep.
+            </p>
           </div>
         </div>
       </div>
