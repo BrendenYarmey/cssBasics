@@ -4,8 +4,8 @@
   Color/Additional Design Choices:
   -I used a form of monochromatic colors for my theme with different greens 
 
-  -Primary Color: Dark Green (#458d45), Dark Grey (##6b5d5d)
-  -Secondary Colors: Soft Green (#ccffcc)
+  -Primary Color: Dark Green (#2d5c2d), Dark Grey (#5A4E4E)
+  -Secondary Colors: Soft Green (#D6FFD6)
   -Neutral Colors: Off-Black (#141414), Light Grey (#f5f5f5)
 
   -I chose a green color scheme with different greys mainly
@@ -65,7 +65,7 @@
 */
 body {
   margin: 0;
-  background-color: #ccffcc;
+  background-color: #d6ffd6;
   font-family: Arial, Helvetica, sans-serif;
   color: #141414;
   text-align: center;
@@ -112,15 +112,17 @@ p {
   font-style: italic;
 }
 .nav-link {
-  margin: 6px;
-  padding: 8px;
+  margin: 8px;
+  padding: 2px;
   color: #141414;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
 }
 /*
   Creates an underline effect when hovering over a link
 */
-.nav-link:hover li {
-  text-decoration: underline;
+.nav-link:hover {
+  border-color: #141414;
 }
 /*
   Creates a custom link style to a youtube video
@@ -162,10 +164,10 @@ p {
   to highlight the words plant (green) and zombie (grey) respectively
 */
 .green-word {
-  color: #458d45;
+  color: #2d5c2d;
 }
 .grey-word {
-  color: #6b5d5d;
+  color: #5a4e4e;
 }
 header {
   /*
