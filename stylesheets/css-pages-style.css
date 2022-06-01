@@ -131,25 +131,28 @@ p {
 */
 .youtube-link {
   margin: 6px;
-  padding: 8px;
+  padding: 2px;
   color: #141414;
   font-size: 24px;
-  font-style: italic;
   text-decoration: none;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
 }
 .youtube-link:hover {
-  text-decoration: underline;
+  border-color: #141414;
 }
 /*
   Defines a custom footer link
 */
 .foot-link {
   margin: 6px;
-  padding: 8px;
+  padding: 2px;
   color: #141414;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
 }
-.foot-link:hover li {
-  text-decoration: underline;
+.foot-link:hover {
+  border-color: #141414;
 }
 .foot-link li {
   font-size: 24px;
