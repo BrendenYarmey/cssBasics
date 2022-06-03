@@ -111,10 +111,16 @@ p {
   text-decoration: underline;
   font-style: italic;
 }
+/*Creates a transition that makes the nav underline fade in and 
+out of existence. Also sets the color to black, and give a 
+margin around the element of 8 pixels and the padding inside 2 pixels.*/
 .nav-link {
   margin: 8px;
   padding: 2px;
   color: #141414;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border-bottom: 2px solid transparent;
 }
@@ -125,8 +131,8 @@ p {
   border-color: #141414;
 }
 /*
-  Creates a custom link style to a youtube video
-  utilizing italics and other properties mentioned
+  Creates another link transition for a youtube video
+  utilizing underlining again and other properties mentioned
   previously.
 */
 .youtube-link {
@@ -135,6 +141,9 @@ p {
   color: #141414;
   font-size: 24px;
   text-decoration: none;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border-bottom: 2px solid transparent;
 }
@@ -148,6 +157,9 @@ p {
   margin: 6px;
   padding: 2px;
   color: #141414;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border-bottom: 2px solid transparent;
 }
@@ -180,6 +192,7 @@ header {
   /*
     Sticks header it to the top of the screen which stays as you scroll
   */
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   padding: 5px;

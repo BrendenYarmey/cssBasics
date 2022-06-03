@@ -23,7 +23,12 @@
         http://thenewcode.com/483/Flipping-Images-With-CSS-Transforms
       */
       #flip-img {
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
         transform: scaleX(-1);
+        -webkit-filter: FlipH;
         filter: FlipH;
         -ms-filter: "FlipH";
         float: none;
@@ -45,7 +50,7 @@
         <span class="grey-word">Zombies</span> Wiki
       </h1>
       <!--
-        Contains site links in an unordered list. Links currently lead nowhere.
+        Contains site links in an unordered list. Links currently lead nowhere. (Besides tips and lawns)
       -->
       <nav>
         <ul>
@@ -160,7 +165,7 @@
           Site designed by Brenden Yarmey
         </p>
         <p style="font-size: 12px; margin: 5px">
-          Last Updated on May 16th 2022
+          Last Updated on June 2nd 2022
         </p>
       </div>
     </footer>
