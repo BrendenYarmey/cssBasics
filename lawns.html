@@ -18,9 +18,11 @@
       href="stylesheets/css-pages-style.css"
     />
     <style>
-      /*Creates the basics for the flip cards. Has 10 pixels of margin and 
-      padding for space, a dark green background, and a preset width and height.
-      Perspective is used to give an element a 3d look.  */
+      /*
+        Creates the basics for the flip cards. Has 10 pixels of margin and 
+        padding for space, a dark green background, and a preset width and height.
+        Perspective is used to give an element a 3d look.  
+      */
       .flip-card {
         display: inline-block;
         padding: 10px;
@@ -33,8 +35,10 @@
         perspective: 1000px;
       }
 
-      /* This container is needed to position the front and back side as well
-      as setting a transformation which last for 0.6 seconds. */
+      /* 
+        This container is needed to position the front and back side as well
+        as setting a transformation which last for 0.6 seconds. 
+      */
       .flip-card-inner {
         position: relative;
         width: 100%;
@@ -52,33 +56,43 @@
         transform-style: preserve-3d;
       }
 
-      /* Do an horizontal flip when you move the mouse over the flip box container */
+      /* 
+        Do an horizontal flip when you move the mouse over the flip box container 
+      */
       .flip-card:hover .flip-card-inner {
         -webkit-transform: rotateY(180deg);
         -moz-transform: rotateY(180deg);
         transform: rotateY(180deg);
       }
 
-      /* Position the front and back side */
+      /* 
+        Position the front and back side
+       */
       .flip-card-front,
       .flip-card-back {
         position: absolute;
         width: 100%;
         height: 100%;
-        /*Backface makes the side of an element facing away from the user hidden*/
+        /*
+          Backface makes the side of an element facing away from the user hidden
+        */
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
       }
 
-      /* Style the front side (fallback if image is missing) */
+      /* 
+        Style the front side (fallback if image is missing) 
+      */
       .flip-card-front {
         background-color: #f5f5f5;
         color: #141414;
       }
 
-      /* Style the back side, sets background color and color for text on back as
-      well as defining a rotation to flip 180deg*/
+      /* 
+        Style the back side, sets background color and color for text on back as
+        well as defining a rotation to flip 180deg
+      */
       .flip-card-back {
         background-color: #f5f5f5;
         color: #141414;
@@ -90,7 +104,9 @@
   </head>
   <body>
     <header>
-      <!--Title and Nav bar share the header-->
+      <!--
+        Title and Nav bar share the header
+      -->
       <h1 id="title-style">
         <span class="green-word">Plants</span> vs.
         <span class="grey-word">Zombies</span> Wiki
@@ -119,7 +135,9 @@
       </nav>
     </header>
     <main>
-      <!--THis paragraph explains what the lawns page does-->
+      <!--
+        This paragraph explains what the lawns page does
+      -->
       <p class="blocked-paragraph">
         Discover the numerous different lawns and their <br />
         unique attributes throughout <span class="green-word">Plants</span> vs.
@@ -127,8 +145,10 @@
         Hover over images to learn more!
       </p>
       <br />
-      <!--The section below defines 6 flip cards using the CSS styling above. These 
-      flipcards flip to the back when hovered on.-->
+      <!--
+        The section below defines 6 flip cards using the CSS styling above. These 
+        flipcards flip to the back when hovered on.
+    -->
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">

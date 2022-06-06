@@ -111,9 +111,11 @@ p {
   text-decoration: underline;
   font-style: italic;
 }
-/*Creates a transition that makes the nav underline fade in and 
-out of existence. Also sets the color to black, and give a 
-margin around the element of 8 pixels and the padding inside 2 pixels.*/
+/*
+  Creates a transition that makes the nav underline fade in and 
+  out of existence. Also sets the color to black, and give a 
+  margin around the element of 8 pixels and the padding inside 2 pixels.
+*/
 .nav-link {
   margin: 8px;
   padding: 2px;
